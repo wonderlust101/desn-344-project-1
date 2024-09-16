@@ -346,6 +346,9 @@ input {
   padding: 6.5rem 5rem 9rem;
   background: url("../images/section-texture.png");
 }
+.testimonial__section {
+  gap: 2rem;
+}
 .testimonial__box {
   display: grid;
   gap: 1.5rem;

@@ -3,6 +3,10 @@
   gap: 9rem;
   padding: 6.5rem 5rem 9rem;
   background: url('../images/section-texture.png');
+  
+  &__section {
+    gap: 2rem;
+  }
 
   &__box {
     display: grid;
