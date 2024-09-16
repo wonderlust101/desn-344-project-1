@@ -1,0 +1,17 @@
+.contact-us {
+  padding: 6.5rem 5rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  background-color: var(--clr-black-0);
+  
+  &__header {
+    color: #FFF;
+    font-family: "EB Garamond", serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-transform: unset;
+  }
+}

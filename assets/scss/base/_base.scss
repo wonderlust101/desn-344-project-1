@@ -3,3 +3,16 @@
 :root {
   @include a.map-to-root(clr, a.$colors);
 }
+
+main {
+  display: grid;
+  justify-items: center;
+  
+  & > * {
+    width: 100%;
+  }
+}
+
+ul {
+  list-style: none;
+}

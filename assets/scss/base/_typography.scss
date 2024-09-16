@@ -1,6 +1,35 @@
 @use '../abstract' as a;
 
-h1, h2, h3, h4,
-h5, h6, p {
+h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
 
+h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.09375rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "EB Garamond", serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  font-family: "EB Garamond", serif;
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+a,
+button,
+input {
+  font-family: "Work Sans", sans-serif;
+  text-decoration: none;
+  color: inherit;
 }

@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/f2b4deb65b.js" crossorigin="anonymous"></script>
+
     <title>Yama Vans | Home</title>
-    <!--         <link rel="icon" href="assets/images/favicon.png" /> -->
 
     <link rel="stylesheet" href="assets/css/main.css"/>
 </head>
@@ -49,16 +50,16 @@
 
     <main>
         <section class="hero">
-            <div class="hero__flex">
+            <div class="hero__header">
                 <h1>Get Back to Wild</h1>
-                <p class="hero__tag">Custom Adventure Vans, Crafted to Order</p>
+                <p class="hero__tag">Custom Adventure Vans, <br> Crafted to Order</p>
             </div>
 
-            <img class="hero__image" src="" alt="Man sitting in front of a Yama van">
+            <img class="hero__image" src="./assets/images/man-infront-of-van.png" alt="Man sitting in front of a Yama van">
         </section>
 
         <section class="process">
-            <div class="two-column">
+            <div class="two-column-section process__basecamp">
                 <h2>Basecamp reimagined</h2>
 
                 <div class="flex-column">
@@ -67,22 +68,22 @@
                     <p>We finely tune our vans for year-round, off-grid travel throughout the Canadian Rockies and beyond. From designing the van
                         together to when our clients get behind the wheel, we ensure a smooth, informative, and exciting ride.</p>
 
-                    <a class="link link--white" href="#">Explore Our Process</a>
+                    <a class="link link--black" href="#">Explore Our Process</a>
                 </div>
             </div>
 
-            <div class="two-column-section">
+            <div class="two-column-section process__testimonial-section">
                 <div class="process__testimonial">
-                    <p class="process_testimonial-quote">“Hands down the best van conversion company in Canada if not North America”</p>
+                    <p class="process__testimonial-quote">“Hands down the best van conversion company in Canada if not North America”</p>
 
-                    <div class="process__testimonial-info">
-                        <p>Scott Z, Manitoba, CAN</p>
+                    <div>
+                        <p class="process__testimonial-info">Scott Z, Manitoba, CAN</p>
                         <img class="process__testimonial-stars" src="" alt="" role="presentation">
                     </div>
                 </div>
 
                 <div class="process__image">
-                    <img class="process_testimonial-image" src="" alt="Man climbing up a yama van">
+                    <img class="process_testimonial-image" src="./assets/images/man-climbs-van.jpeg" alt="Man climbing up a yama van">
                 </div>
             </div>
         </section>
@@ -95,11 +96,11 @@
             <a class="link link--white" href="#">Build Spotlight</a>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonial">
             <div class="flex-end">
                 <h3>From our clients</h3>
 
-                <div class="testimonials__box">
+                <div class="testimonial__box">
                     <p>"From our first phone call to the delivery of our new build the experience has been first class. Not only is their product and
                         workmanship excellent I have really appreciated their timely communication throughout the whole process."</p>
 
@@ -122,12 +123,12 @@
             </div>
         </section>
 
-        <!-- Video -->
+        <video class="video" src="./assets/video/yama-video.mp4" autoplay loop></video>
 
         <section class="contact-us">
-            <h2>Start your build</h2>
+            <h2 class="contact-us__header">Start your build</h2>
 
-            <a class="link link--black" href="#"></a>
+            <a class="link link--white" href="#">Contact Us</a>
         </section>
 
         <footer class="footer">
@@ -157,7 +158,8 @@
 
                 <div class="footer__content">
                     <div class="footer__info">
-                        <p>Your adventure starts here. Yama Vans is based in Calgary, Canada, delivering custom vans across North America. We build
+                        <p class="footer__info-text">Your adventure starts here. Yama Vans is based in Calgary, Canada, delivering custom vans across 
+                            North America. We build
                             vehicles for adventure that allow you to spend more time living freely.</p>
                         <p class="footer__copyright">©2024 Yama Vans. All Rights Reserved. Privacy Policy.</p>
                     </div>
@@ -179,25 +181,44 @@
 
             <div class="footer__bottom">
                 <form class="footer__form">
+                    <p class="footer__form-purpose">Sign up for our newsletter to hear about new builds, 
+                        events, and updates from our shop.</p>
+                    
                     <fieldset>
                         <div class="text-input">
-                            <label for="footer-form">Email <span class="text-input__required">*</span></label>
+                            <label class="text-input__label" for="footer-form">Email <span class="text-input__required">*</span></label>
                             <input class="text-input__field" type="email" id="footer-form">
                         </div>
                         
-                        <button class="button button-white" type="submit">Submit</button>
+                        <button class="button button--white" type="submit">Submit</button>
                     </fieldset>
                 </form>
                 
                 <div class="footer__shop-address">
-                    <h2 class="footer__sub-header"></h2>
+                    <h2 class="footer__sub-header">Shop Address</h2>
                     <p>334 53 Ave SE Unit 100, Calgary, AB T2H 0N3</p>
                 </div>
                 
                 <div class="footer__socials">
                     <h2 class="footer__sub-header">Social</h2>
                     <div class="footer__social-flex">
-                        
+                        <ul class="footer__socials-flex">
+                            <li>
+                                <a href="#" aria-label="Go to Yama Instagram Page">
+                                    <i class="fa-fw fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Go to Yama Youtube Page">
+                                    <i class="fa-fw fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Go to Yama Pinterest Page">
+                                    <i class="fa-fw fa-brands fa-pinterest-p"></i>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

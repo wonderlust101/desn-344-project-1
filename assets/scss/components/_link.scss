@@ -1,0 +1,22 @@
+.link {
+  position: relative;
+  padding: 0.75rem 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.09375rem;
+  text-transform: uppercase;
+  
+  &:hover {
+    opacity: 0.6;
+  }
+  
+  &--black {
+    color: var(--clr-black-0);
+    border-bottom: 3px solid var(--clr-black-0);
+  }
+  
+  &--white {
+    color: var(--clr-white-900);
+    border-bottom: 3px solid var(--clr-white-900);
+  }
+}

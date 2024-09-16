@@ -1,0 +1,18 @@
+.two-column-section {
+  display: grid;
+  grid-template-columns: max-content 60%;
+  justify-content: space-between;
+}
+
+.flex-end {
+  display: grid;
+  grid-template-columns: 60%;
+  justify-content: flex-end;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}

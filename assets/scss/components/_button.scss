@@ -1,0 +1,30 @@
+.button {
+  font-size: 0.9375rem;
+  padding: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.09375rem;
+  text-transform: uppercase;
+  border: none;
+  
+  &--black {
+    color: var(--clr-white-900);
+    background-color: var(--clr-black-10);
+    border: solid 2px var(--clr-black-10);
+    
+    &:hover {
+      color: var(--clr-black-10);
+      background-color: var(--clr-white-900);
+    }
+  }
+
+  &--white {
+    color: var(--clr-black-0);
+    background-color: var(--clr-white-900);
+    border: solid 2px var(--clr-white-900);
+
+    &:hover {
+      color: var(--clr-white-900);
+      background-color: var(--clr-black-0);
+    }
+  }
+}

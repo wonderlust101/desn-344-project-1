@@ -1,0 +1,49 @@
+.process {
+  display: grid;
+  background: url('../images/section-texture.png');
+  
+  &__basecamp {
+    padding: 6.5rem 5rem 9rem;
+  }
+  
+  &__testimonial-section {
+    padding: 6.5rem 5rem 14rem;
+    position: relative;
+    
+    &::after {
+      content: 'The road is calling';
+      position: absolute;
+      bottom: 2.5rem;
+      right: 5rem;
+      font-family: 'EB Garamond', serif;
+      font-size: 8.875rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      color: rgba(0, 0, 0, 0.10);
+    }
+  }
+  
+  &__testimonial {
+    align-self: flex-start;
+    display: grid;
+    gap: 0.5rem;
+    width: 19rem;
+  }
+  
+  &__testimonial-quote {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  &__testimonial-info {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

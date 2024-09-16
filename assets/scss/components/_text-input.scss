@@ -1,0 +1,47 @@
+.text-input {
+  display: grid;
+  gap: 0.5rem;
+  position: relative;
+
+  &__field {
+    width: 100%;
+    padding: 1rem 1.75rem;
+    font-weight: 400;
+    color: var(--clr-black);
+    border: none;
+    outline: none !important;
+
+    &:focus {
+      border: 2px solid var(--clr-primary-color-purple-500);
+    }
+
+    &--error,
+    &--error:focus {
+      border: 2px solid var(--clr-primary-color-red-400);
+    }
+
+    &--success {
+      border: 2px solid var(--clr-primary-color-green-500);
+    }
+  }
+  
+  &__label {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--clr-white-900);
+  }
+  
+  &__required {
+    color: var(--clr-red-500);
+  }
+
+  &__status {
+    display: none;
+    text-align: right;
+    font-size: 0.75rem;
+    color: var(--clr-primary-color-red-400);
+  }
+}
