@@ -1,0 +1,437 @@
+/*******************************
+    CSS Variables
+*******************************/
+
+:root {
+    /* Neutral Colors */
+    --clr-neutral-black: #000000;
+    --clr-neutral-white: #ffffff;
+    --clr-neutral-grey-300: #f1efec;
+    --clr-neutral-grey-900: #242424;
+
+    /* Specific Colors */
+    --clr-error: #ff0000;
+}
+
+/*********************************************************
+    CSS Reset 
+    https://www.joshwcomeau.com/css/custom-css-reset/
+*********************************************************/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/*******************************
+    Base Styles
+*******************************/
+
+fieldset {
+    border: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/*******************************
+    Layout Styles
+*******************************/
+
+/* grid bleed */
+
+.section {
+    /* grid */
+}
+
+.flex-end-column {
+    /* grid-template-column */
+    /* gap 9rem */
+}
+
+.two-columns {
+    /* grid-template-column */
+    /* gap 9rem */
+}
+
+.text-flow {
+    /*grid gap 1 rem*/
+}
+
+.grid-auto-fit {
+    /* grid auto-fit minmax(15rem, 1fr) column-gap 1 */
+}
+
+/*******************************
+    Typography
+*******************************/
+
+h1 {
+    font-family: 'EB Garamond', serif;
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: 'Work Sans', serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'EB Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'EB Garamond', serif;
+    font-size: 1.625rem;
+}
+
+.san-serif-p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.san-serif-subtitle {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.09375rem;
+}
+
+a,
+button,
+label,
+input {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: inherit;
+}
+
+/**********************
+    Components
+**********************/
+
+/****************************
+    Button
+*****************************/
+.button {
+    display: inline-block;
+    width: max-content;
+    padding: 1rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button--black {
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-neutral-black);
+    border: 2px solid var(--clr-neutral-black);
+}
+
+.button--black:hover {
+    color: var(--clr-neutral-black);
+    background-color: transparent;
+}
+
+.button--white {
+    color: var(--clr-neutral-black);
+    background-color: var(--clr-neutral-white);
+    border: 2px solid var(--clr-neutral-white);
+}
+
+.button--white:hover {
+    color: var(--clr-neutral-white);
+    background-color: transparent;
+}
+
+/****************************
+    Link
+*****************************/
+
+.link {
+    display: inline-block;
+    padding-bottom: 0.75rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.09375rem;
+}
+
+.link--black {
+    color: var(--clr-neutral-black);
+    border-bottom: 2px solid var(--clr-neutral-black);
+}
+
+.link--white {
+    color: var(--clr-neutral-white);
+    border-bottom: 2px solid var(--clr-neutral-white);
+}
+
+/******************************
+    Text Input
+*******************************/
+
+.text-input {
+    /* grid gap 1.5rem */
+}
+
+.text-input__field {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid transparent;
+}
+
+.text-input__field--error,
+.text-input__field--error:focus {
+    border: 2px solid var(--clr-error);
+}
+
+/***********************************
+    Home Page Styles
+***********************************/
+
+/****************************
+    Header
+****************************/
+header {
+    padding: 2.5rem 5rem;
+}
+
+.header__navigation a {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+}
+
+.header__navigation a:hover {
+    text-decoration: underline;
+}
+
+/****************************
+    Hero
+****************************/
+
+.hero__text {
+    padding: 5rem;
+}
+
+.hero__tag {
+    padding: 0.75rem 0 0.75rem 1.5rem;
+    letter-spacing: 0.09375rem;
+    text-transform: uppercase;
+    border-left: 2px solid #000000;
+}
+
+.hero__image {
+    padding: 5rem;
+    background: url('../images/barren-landscape.webp') no-repeat center;
+    background-size: cover;
+}
+
+/****************************
+    Basecamp Reimagined
+****************************/
+
+.basecamp {
+    /* Relative*/
+    padding: 6.5rem 5rem 12rem;
+}
+
+.basecamp__quote {
+    font-weight: 400;
+}
+
+.basecamp__quote-author {
+    font-weight: 600;
+}
+
+.basecamp__quote-container {
+    /* flex column and gap: 0.5rem */
+}
+
+.basecamp__quote-author-flex {
+    /* flex and gap: 0.5rem */
+}
+
+.basecamp__large-text-deco {
+    /* Absolute */
+    font-size: 8.875rem;
+    text-align: right;
+    opacity: 0.1;
+}
+
+/****************************
+    Explore Builds
+****************************/
+
+.explore-builds {
+    /* Center */
+    height: 35.125rem;
+    color: var(--clr-neutral-white);
+    background: url('../images/van-collage.webp') no-repeat center;
+    background-size: cover;
+    /* Radial Gradient to background */
+}
+
+.explore-builds__text {
+    /* gap: 0.5 center*/
+    text-align: center;
+}
+
+.explore-builds__header {
+    font-family: 'EB Garamond';
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+
+.explore-builds__body {
+    font-weight: 500;
+}
+
+/************************************
+    Testimonials and About Us
+************************************/
+
+.testimonial-about-us {
+    padding: 6.5rem 5rem 9rem;
+}
+
+.testimonial {
+    /* gap 2rem */
+}
+
+.testimonial__box {
+    /* gap 3rem */
+    padding: 3rem;
+    background-color: var(--clr-neutral-white);
+}
+
+/************************
+    Contact Us
+************************/
+
+.contact-us {
+    /* Center gap 1.5*/
+    padding: 6.5rem 5rem;
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-neutral-grey-900);
+}
+
+.contact-us__header {
+    font-family: 'EB Garamond';
+    font-size: 4.5rem;
+    font-weight: 400;
+    text-transform: unset;
+    color: var(--clr-neutral-white);
+}
+
+/************************
+    Footer
+************************/
+
+/************************
+    Footer Top
+************************/
+.footer__top {
+    /* gap 3rem */
+    padding: 5rem;
+}
+
+.footer__top-content {
+    /* grid 40% 40% space-betwen */
+}
+
+.footer__top-text {
+    /* space-between */
+}
+
+.footer__copyright {
+    opacity: 0.5;
+}
+
+.footer__copyright-link {
+    text-decoration: underline;
+}
+
+.footer__link {
+    font-family: 'EB Garamond';
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__button {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: var(--clr-neutral-grey-300);
+    border: 2px solid var(--clr-neutral-grey-300);
+}
+
+.footer__button:hover {
+    background-color: var(--clr-neutral-white);
+}
+
+/************************
+    Footer Bottom
+************************/
+
+.footer__bottom {
+    /* grid 3 col*/
+    padding: 5rem;
+    color: var(--clr-neutral-white);
+    background-color: var(--clr-neutral-grey-900);
+}
+
+.footer__form-required-star {
+    color: var(--clr-error);
+}
+
+.footer__bottom-section {
+
+}
+
+.footer__bottom-section-header {
+    padding: 0.75rem 0rem;
+    border-bottom: 2px solid var(--clr-neutral-white);
+}
+
+.footer__socials {
+    /* flex gap 0.5rem */
+}
+
+.footer__socials img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.25rem;
+    background-color: var(--clr-neutral-white);
+    border-radius: 50rem;
+}
