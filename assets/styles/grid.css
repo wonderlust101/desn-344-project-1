@@ -1,0 +1,116 @@
+.container {
+    width: 1128px;
+    margin: 0 auto;
+    background-color: lightcoral;
+}
+
+.container-fluid {
+    width: 100%;
+    background-color: lightblue;
+}
+
+.container-fluid .row {
+    width: 1128px;
+    margin: 0 auto;
+    background-color: lightgreen;
+}
+
+.row {
+    margin-bottom: 30px;
+    background-color: pink;
+}
+
+/* Columns */
+
+.col-1 {
+    width: calc(94px * 1 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-2 {
+    width: calc(94px * 2 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-3 {
+    width: calc(94px * 3 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-4 {
+    width: calc(94px * 4 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-5 {
+    width: calc(94px * 5 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-6 {
+    width: calc(94px * 6 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-7 {
+    width: calc(94px * 7 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-8 {
+    width: calc(94px * 8 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-9 {
+    width: calc(94px * 9 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-10 {
+    width: calc(94px * 10 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-11 {
+    width: calc(94px * 11 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.col-12 {
+    width: calc(94px * 12 - 48px);
+    margin: 0 24px;
+    background-color: peachpuff;
+    float: left;
+}
+
+.row::before, .row::after {
+    content: '';
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
