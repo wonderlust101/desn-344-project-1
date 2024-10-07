@@ -32,7 +32,7 @@
 *******************************/
 
 .section {
-    background: url('../images/section-texture.png');
+    background-image: url('../images/section-texture.webp');
 }
 
 .text-flow {
