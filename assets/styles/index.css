@@ -19,7 +19,7 @@
 
 .clearfix:before,
 .clearfix:after {
-    content: "";
+    content: '';
     display: table;
 }
 
@@ -31,30 +31,15 @@
     Layout Styles
 *******************************/
 
-/* grid bleed */
-
 .section {
-    /* grid */
-}
-
-.flex-end-column {
-    /* grid-template-column */
-    /* gap 9rem */
-}
-
-.two-columns {
-    /* grid-template-column */
-    /* gap 9rem */
+    background: url('../images/section-texture.png');
 }
 
 .text-flow {
-    /*grid gap 1 rem*/
+    & > *:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
 }
-
-.grid-auto-fit {
-    /* grid auto-fit minmax(15rem, 1fr) column-gap 1 */
-}
-
 /*******************************
     Typography
 *******************************/
@@ -63,6 +48,7 @@ h1 {
     font-family: 'EB Garamond', serif;
     font-size: 4.5rem;
     font-weight: 400;
+    line-height: normal;
 }
 
 h2 {
@@ -71,17 +57,20 @@ h2 {
     font-weight: 600;
     letter-spacing: 0.09375rem;
     text-transform: uppercase;
+    line-height: normal;
 }
 
 h3 {
     font-family: 'EB Garamond', serif;
     font-size: 2.5rem;
     font-weight: 400;
+    line-height: normal;
 }
 
 p {
     font-family: 'EB Garamond', serif;
     font-size: 1.625rem;
+    line-height: normal;
 }
 
 .san-serif-p {
@@ -114,10 +103,11 @@ input {
 *****************************/
 .button {
     display: inline-block;
-    width: max-content;
+    width: 100%;
     padding: 1rem;
     font-size: 0.9375rem;
     font-weight: 600;
+    text-align: center;
     letter-spacing: 0.09375rem;
     text-transform: uppercase;
     border: none;
@@ -171,14 +161,12 @@ input {
     Text Input
 *******************************/
 
-.text-input {
-    /* grid gap 1.5rem */
-}
-
 .text-input__field {
+    margin-top: 1.5rem;
     width: 100%;
     padding: 1rem;
     border: 2px solid transparent;
+    color: var(--clr-neutral-black);
 }
 
 .text-input__field--error,
@@ -194,7 +182,11 @@ input {
     Header
 ****************************/
 header {
-    padding: 2.5rem 5rem;
+    padding-top: 2.5rem;
+}
+
+.header__navigation {
+    padding: 1.25rem 0;
 }
 
 .header__navigation a {
@@ -202,6 +194,11 @@ header {
     font-weight: 600;
     letter-spacing: 0.09375rem;
     text-transform: uppercase;
+}
+
+.header__navigation a {
+    float: left;
+    padding-left: 2.5rem;
 }
 
 .header__navigation a:hover {
@@ -213,10 +210,11 @@ header {
 ****************************/
 
 .hero__text {
-    padding: 5rem;
+    padding: 5rem 0;
 }
 
 .hero__tag {
+    margin-top: 1.25rem;
     padding: 0.75rem 0 0.75rem 1.5rem;
     letter-spacing: 0.09375rem;
     text-transform: uppercase;
@@ -224,6 +222,7 @@ header {
 }
 
 .hero__image {
+    width: 100%;
     padding: 5rem;
     background: url('../images/barren-landscape.webp') no-repeat center;
     background-size: cover;
@@ -232,10 +231,12 @@ header {
 /****************************
     Basecamp Reimagined
 ****************************/
-
 .basecamp {
-    /* Relative*/
-    padding: 6.5rem 5rem 12rem;
+    padding-top: 6.5rem;
+}
+
+.basecamp > *:first-child {
+    padding-bottom: 9rem;
 }
 
 .basecamp__quote {
@@ -246,19 +247,21 @@ header {
     font-weight: 600;
 }
 
-.basecamp__quote-container {
-    /* flex column and gap: 0.5rem */
+.basecamp__quote-author-flex {
+    margin-top: 0.5rem;
 }
 
-.basecamp__quote-author-flex {
-    /* flex and gap: 0.5rem */
+.basecamp__quote-author-flex > * {
+    margin-right: 0.5rem;
+    float: left;
 }
 
 .basecamp__large-text-deco {
-    /* Absolute */
+    float: right;
     font-size: 8.875rem;
     text-align: right;
     opacity: 0.1;
+    padding-bottom: 2.5rem;
 }
 
 /****************************
@@ -266,21 +269,23 @@ header {
 ****************************/
 
 .explore-builds {
-    /* Center */
+    padding: 12rem 0;
     height: 35.125rem;
     color: var(--clr-neutral-white);
-    background: url('../images/van-collage.webp') no-repeat center;
     background-size: cover;
-    /* Radial Gradient to background */
+    text-align: center;
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, rgba(36, 36, 36, 0.00) 100%),
+    url('../images/van-collage.webp') no-repeat center;
+    background-size: 100%;
 }
 
 .explore-builds__text {
-    /* gap: 0.5 center*/
     text-align: center;
+    margin-bottom: 2.25rem;
 }
 
 .explore-builds__header {
-    font-family: 'EB Garamond' ,sans-serif;
+    font-family: 'EB Garamond', sans-serif;
     font-size: 4.5rem;
     font-weight: 400;
 }
@@ -292,9 +297,12 @@ header {
 /************************************
     Testimonials and About Us
 ************************************/
-
 .testimonial-about-us {
-    padding: 6.5rem 5rem 9rem;
+    padding: 6.5rem 0 9rem;
+}
+
+.testimonial-about-us > :first-child {
+    padding-bottom: 9rem;
 }
 
 .testimonial {
@@ -302,7 +310,7 @@ header {
 }
 
 .testimonial__box {
-    /* gap 3rem */
+    margin-top: 2rem;
     padding: 3rem;
     background-color: var(--clr-neutral-white);
 }
@@ -312,10 +320,10 @@ header {
 ************************/
 
 .contact-us {
-    /* Center gap 1.5*/
     padding: 6.5rem 5rem;
     color: var(--clr-neutral-white);
     background-color: var(--clr-neutral-grey-900);
+    text-align: center;
 }
 
 .contact-us__header {
@@ -324,6 +332,7 @@ header {
     font-weight: 400;
     text-transform: unset;
     color: var(--clr-neutral-white);
+    margin-bottom: 1.5rem;
 }
 
 /************************
@@ -335,11 +344,13 @@ header {
 ************************/
 .footer__top {
     /* gap 3rem */
-    padding: 5rem;
+    padding: 5rem 0 ;
+    margin-bottom: unset;
 }
 
 .footer__top-content {
-    /* grid 40% 40% space-between */
+    margin-top: 3rem;
+    margin-bottom: unset;
 }
 
 .footer__top-text {
@@ -347,11 +358,16 @@ header {
 }
 
 .footer__copyright {
+    padding-top: 5rem;
     opacity: 0.5;
 }
 
 .footer__copyright-link {
     text-decoration: underline;
+}
+
+.footer__nav ul > *:not(:last-child){
+    margin-bottom: 2.5rem;
 }
 
 .footer__link {
@@ -367,6 +383,7 @@ header {
 
 .footer__button {
     display: inline-block;
+    margin-top: 3rem;
     padding: 1rem;
     text-transform: uppercase;
     background-color: var(--clr-neutral-grey-300);
@@ -382,18 +399,22 @@ header {
 ************************/
 
 .footer__bottom {
-    /* grid 3 col*/
-    padding: 5rem;
+    padding: 5rem 0;
     color: var(--clr-neutral-white);
     background-color: var(--clr-neutral-grey-900);
+    margin-bottom: unset;
+}
+
+.footer__fieldset > *:not(:first-child) {
+    margin-top: 1.5rem;
 }
 
 .footer__form-required-star {
     color: var(--clr-error);
 }
 
-.footer__bottom-section {
-
+.footer__bottom-section > *:not(:first-child)  {
+    margin-top: 1rem;
 }
 
 .footer__bottom-section-header {
@@ -401,8 +422,9 @@ header {
     border-bottom: 2px solid var(--clr-neutral-white);
 }
 
-.footer__socials {
-    /* flex gap 0.5rem */
+.footer__socials > * {
+    float: left;
+    padding-right: 1rem;
 }
 
 .footer__socials img {

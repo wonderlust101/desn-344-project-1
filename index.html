@@ -21,40 +21,49 @@
 
 <body>
     <!-- Header -->
-    <header class="">
-        <img src="assets/images/logo_yama.svg" alt="Yama Logo">
+    <header class="container">
+        <div class="row">
+            <div class="col-3">
+                <img class="logo" src="assets/images/logo_yama.svg" alt="Yama Logo">
+            </div>
 
-        <nav>
-            <ul class="header__navigation">
-                <li><a href="#" aria-label="Go to Process Page">Process</a></li>
-                <li><a href="#" aria-label="Go to Vans Page">Vans</a></li>
-                <li><a href="#" aria-label="Go to About Page">About</a></li>
-                <li><a href="#" aria-label="Go to Stories Page">Stories</a></li>
-            </ul>
-        </nav>
+            <nav class="col-6">
+                <ul class="header__navigation">
+                    <li><a href="#" aria-label="Go to Process Page">Process</a></li>
+                    <li><a href="#" aria-label="Go to Vans Page">Vans</a></li>
+                    <li><a href="#" aria-label="Go to About Page">About</a></li>
+                    <li><a href="#" aria-label="Go to Stories Page">Stories</a></li>
+                </ul>
+            </nav>
 
-        <a class="button button--black" href="#">Start your build</a>
+            <div class="col-3">
+                <a class="button button--black" href="#">Start your build</a>
+            </div>
+        </div>
     </header>
     <!-- Header End -->
 
     <main>
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero__text">
-                <h1>Get Back to Wild</h1>
-                <p class="hero__tag san-serif-subtitle">Custom Adventure Vans, <br> Crafted to Order</p>
+        <section class="container-fluid">
+            <div class="row hero__text">
+                <h1 class="col-8">Get Back to Wild</h1>
+                <p class="hero__tag san-serif-subtitle col-4">Custom Adventure Vans, <br> Crafted to Order</p>
             </div>
 
+        </section>
+
+        <section class="container-fluid">
             <img class="hero__image" src="./assets/images/man-sitting-infront-of-van.webp" alt="Man sitting in front of a Yama van">
         </section>
         <!-- Hero Section End -->
 
         <!-- Section 1 - Basecamp Reimagined -->
-        <section class="basecamp section">
-            <div class="two-columns">
-                <h2 class="section__nav-header">Basecamp reimagined</h2>
+        <section class="container-fluid basecamp section">
+            <div class="row two-columns">
+                <h2 class="col-4 section__nav-header">Basecamp reimagined</h2>
 
-                <div class="text-flow">
+                <div class="col-8 text-flow">
                     <h3>What drives us</h3>
                     <p>We finely tune our vans for year-round, off-grid travel throughout the Canadian Rockies and beyond. From designing the van
                         together to when our clients get behind the wheel, we ensure a smooth, informative, and exciting ride.</p>
@@ -62,40 +71,42 @@
                 </div>
             </div>
 
-            <div class="two-columns">
-                <div class="basecamp__quote-container">
+            <div class="row two-columns">
+                <div class="col-4 basecamp__quote-container">
                     <q class="san-serif-p">Hands down the best van conversion company in Canada if not North America</q>
-                    
+
                     <div class="basecamp__quote-author-flex">
-                        <p class="san-serif-p">Scott Z, Manitoba, CAN</p>
+                        <p class="san-serif-p"><b>Scott Z, Manitoba, CAN</b></p>
                         <img src="./assets/images/star-ratings.svg" alt="Five Stars" role="presentation">
                     </div>
                 </div>
 
-                <div>
+                <div class="col-8">
                     <img src="./assets/images/main-climbing-van.webp" alt="Man climbing up a Yama van">
                 </div>
             </div>
 
-            <h1 class="basecamp__large-text-deco" role="presentation">The road is calling</h1>
+            <div class="row">
+                <h1 class="basecamp__large-text-deco" role="presentation">The road is calling</h1>
+            </div>
         </section>
         <!-- Section 1 - Basecamp reimagined -->
 
         <!-- Section 2 - Explore our Builds -->
-        <section class="explore-builds">
+        <section class="explore-builds container-fluid">
             <div class="explore-builds__text">
                 <h2 class="explore-builds__header">Explore our Builds</h2>
                 <p class="explore-builds__body san-serif-p">Get a better look at some of our favourite builds to-date.</p>
             </div>
-            
+
             <a class="link link--white" href="#">Build Spotlight</a>
         </section>
         <!-- Section 2 - Explore our Builds -->
 
         <!-- Section 3 - Testimonials -->
-        <section class="testimonial-about-us section">
-            <div class="flex-end-column">
-                <div>
+        <section class="container-fluid section testimonial-about-us">
+            <div class="row">
+                <div class="col-8 float-right">
                     <h3>From our clients</h3>
                     <div class="testimonial__box text-flow">
                         <p>"From our first phone call to the delivery of our new build the experience has been first class. Not only is their product
@@ -107,14 +118,15 @@
             <!-- Section 3 - Testimonials -->
 
             <!-- Section 4 - About Us -->
-            <div class="two-columns">
-                <h2>About Us</h2>
-                <div class="text-flow">
+            <div class="row two-columns">
+                <h2 class="col-4">About Us</h2>
+
+                <div class="col-8 text-flow">
                     <h3>Invention > convention</h3>
                     <p>Yama Vans is the manifestation of our desire to defy convention and live lives of our own invention. And we knew we weren’t
                         alone. Now we make vans for people like us. People who want to write their stories on the roads beneath their wheels, the
                         trails beneath their boots, the waves beneath their boards, and the powder beneath their skis.</p>
-                    
+
                     <a class="link link--black" href="#">Explore Our Process</a>
                 </div>
             </div>
@@ -137,83 +149,94 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="container-fluid footer">
         <!-- Footer - Top Section-->
-        <div class="footer__top">
-            <img src="assets/images/logo_yama.svg" alt="Yama Logo">
+        <div class="container footer__top">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/images/logo_yama.svg" alt="Yama Logo">
+                </div>
+            </div>
 
-            <div class="footer__top-content">
-                <div class="footer__top-text">
+            <div class="row footer__top-content">
+                <div class="col-6 footer__top-text">
                     <p class="san-serif-p">Your adventure starts here. Yama Vans is based in Calgary, Canada, delivering custom vans across North
                         America. We build vehicles for adventure that allow you to spend more time living freely.</p>
-                    
-                    <p class="footer__copyright san-serif-p">
-                        ©2024 Yama Vans. All Rights Reserved.
-                        <a class="footer__copyright-link" href="#" aria-label="Go to Privacy Policy Page">Privacy Policy.</a>
-                    </p>
                 </div>
 
-                <div>
-                    <ul class="grid-auto-fit">
+                <div class="footer__nav">
+                    <ul class="col-3">
                         <li><a class="footer__link" href="#" aria-label="Go to Process Page">Process</a></li>
                         <li><a class="footer__link" href="#" aria-label="Go to Stories Page">Stories</a></li>
                         <li><a class="footer__link" href="#" aria-label="Go to Gallery Page">Gallery</a></li>
+                    </ul>
+
+                    <ul class="col-3">
                         <li><a class="footer__link" href="#" aria-label="Go to Work at Yama Page">Work at Yama</a></li>
                         <li><a class="footer__link" href="#" aria-label="Go to About Page">About</a></li>
                         <li><a class="footer__link" href="#" aria-label="Go to Contact Page">Contact</a></li>
                     </ul>
 
-                    <a class="footer__button san-serif-subtitle" href="#">Explore our show Van, The Grand Teton</a>
+                    <div class="row float-right">
+                        <p class="col-6 footer__copyright san-serif-p">
+                            ©2024 Yama Vans. All Rights Reserved.
+                            <a class="footer__copyright-link" href="#" aria-label="Go to Privacy Policy Page">Privacy Policy.</a>
+                        </p>
+
+                        <a class="col-6 footer__button san-serif-subtitle" href="#">Explore our show Van, The Grand Teton</a>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Footer - Top Section-->
 
         <!-- Footer - Bottom Section-->
-        <div class="footer__bottom">
-            <form id="signup-form" novalidate>
-                <fieldset>
-                    <legend class="san-serif-p">Sign up for our newsletter to hear about new builds, events, and updates from our shop.</legend>
-                    
-                    <div class="text-input">
-                        <label for="footer-form">
-                            Email
-                            <span class="footer__form-required-star">*</span>
-                        </label>
-                        <input class="text-input__field" id="footer-form" type="email" spellcheck="false" aria-required="true" required>
-                    </div>
-                    
-                    <button class="button button--white" type="submit">Submit</button>
-                </fieldset>
-            </form>
+        <div class="container-fluid footer__bottom">
+            <div class="row">
+                <form class="col-6" id="signup-form" novalidate>
+                    <fieldset class="footer__fieldset">
+                        <legend class="san-serif-p">Sign up for our newsletter to hear about new builds, events, and updates from our shop.</legend>
 
-            <div class="footer__bottom-section">
-                <h2 class="footer__bottom-section-header">Shop Address</h2>
-                <p class="san-serif-p">334 53 Ave SE Unit 100, Calgary, AB T2H 0N3</p>
-            </div>
+                        <div class="text-input">
+                            <label for="footer-form">
+                                Email
+                                <span class="footer__form-required-star">*</span>
+                            </label>
+                            <input class="text-input__field" id="footer-form" type="email" spellcheck="false" aria-required="true" required>
+                        </div>
 
-            <div class="footer__bottom-section">
-                <h2 class="footer__bottom-section-header">Social</h2>
+                        <button class="button button--white" type="submit">Submit</button>
+                    </fieldset>
+                </form>
 
-                <ul class="footer__socials">
-                    <li>
-                        <a href="#" aria-label="Go to Yama's Instagram Page">
-                            <img src="./assets/images/logo_instagram.svg" alt="Instagram Logo" role="presentation">
-                        </a>
-                    </li>
+                <div class="col-3 footer__bottom-section">
+                    <h2 class="footer__bottom-section-header">Shop Address</h2>
+                    <p class="san-serif-p">334 53 Ave SE Unit 100, Calgary, AB T2H 0N3</p>
+                </div>
 
-                    <li>
-                        <a href="#" aria-label="Go to Yama's Youtube Page">
-                            <img src="./assets/images/logo_youtube.svg" alt="Youtube Logo" role="presentation">
-                        </a>
-                    </li>
+                <div class="col-3 footer__bottom-section">
+                    <h2 class="footer__bottom-section-header">Social</h2>
 
-                    <li>
-                        <a href="#" aria-label="Go to Yama's Pinterest Page">
-                            <img src="./assets/images/logo_pinterest.svg" alt="Pinterest Logo" role="presentation">
-                        </a>
-                    </li>
-                </ul>
+                    <ul class="footer__socials">
+                        <li>
+                            <a href="#" aria-label="Go to Yama's Instagram Page">
+                                <img src="./assets/images/logo_instagram.svg" alt="Instagram Logo" role="presentation">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Go to Yama's Youtube Page">
+                                <img src="./assets/images/logo_youtube.svg" alt="Youtube Logo" role="presentation">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" aria-label="Go to Yama's Pinterest Page">
+                                <img src="./assets/images/logo_pinterest.svg" alt="Pinterest Logo" role="presentation">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </footer>
