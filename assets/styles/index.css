@@ -57,25 +57,37 @@ ol {
 /* grid bleed */
 
 .section {
-    /* grid */
+    display: grid;
+    gap: 9rem;
+    background-image: url('../images/section-texture.webp');
 }
 
 .flex-end-column {
-    /* grid-template-column */
-    /* gap 9rem */
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 9rem;
+}
+
+.flex-end-column > * {
+    grid-area: 1/2;
 }
 
 .two-columns {
-    /* grid-template-column */
-    /* gap 9rem */
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 9rem;
 }
 
 .text-flow {
-    /*grid gap 1 rem*/
+    display: grid;
+    gap: 1.5rem;
+    justify-items: flex-start;
 }
 
 .grid-auto-fit {
-    /* grid auto-fit minmax(15rem, 1fr) column-gap 1 */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 1rem;
 }
 
 /*******************************
@@ -174,10 +186,11 @@ input {
 
 .link {
     display: inline-block;
-    padding-bottom: 0.75rem;
+    padding: 0.75rem 0;
     font-size: 0.9375rem;
     font-weight: 600;
     letter-spacing: 0.09375rem;
+    text-transform: uppercase;
 }
 
 .link--black {
@@ -191,11 +204,25 @@ input {
 }
 
 /******************************
+    Signup Form
+*******************************/
+
+fieldset {
+    display: grid;
+    gap: 1.5rem;
+}
+
+legend {
+    margin-bottom: 1.5rem;
+}
+
+/******************************
     Text Input
 *******************************/
 
 .text-input {
-    /* grid gap 1.5rem */
+    display: grid;
+    gap: 1.5rem;
 }
 
 .text-input__field {
@@ -217,7 +244,15 @@ input {
     Header
 ****************************/
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 2.5rem 5rem;
+}
+
+.header__navigation {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .header__navigation a {
@@ -236,6 +271,9 @@ header {
 ****************************/
 
 .hero__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 5rem;
 }
 
@@ -257,7 +295,7 @@ header {
 ****************************/
 
 .basecamp {
-    /* Relative*/
+    position: relative;
     padding: 6.5rem 5rem 12rem;
 }
 
@@ -270,18 +308,23 @@ header {
 }
 
 .basecamp__quote-container {
-    /* flex column and gap: 0.5rem */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .basecamp__quote-author-flex {
-    /* flex and gap: 0.5rem */
+    display: flex;
+    gap: 0.5rem;
 }
 
 .basecamp__large-text-deco {
-    /* Absolute */
+    position: absolute;
     font-size: 8.875rem;
     text-align: right;
     opacity: 0.1;
+    bottom: 2.5rem;
+    right: 5rem;
 }
 
 /****************************
@@ -289,21 +332,24 @@ header {
 ****************************/
 
 .explore-builds {
-    /* Center */
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 2.25rem;
     height: 35.125rem;
     color: var(--clr-neutral-white);
-    background: url('../images/van-collage.webp') no-repeat center;
+    background: radial-gradient(50% 50% at 50% 50%, #242424 0%, rgba(36, 36, 36, 0.00) 100%), url('../images/van-collage.webp') no-repeat center;
     background-size: cover;
-    /* Radial Gradient to background */
 }
 
 .explore-builds__text {
-    /* gap: 0.5 center*/
+    display: grid;
+    gap: 0.5rem;
     text-align: center;
 }
 
 .explore-builds__header {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', sans-serif;
     font-size: 4.5rem;
     font-weight: 400;
 }
@@ -320,12 +366,9 @@ header {
     padding: 6.5rem 5rem 9rem;
 }
 
-.testimonial {
-    /* gap 2rem */
-}
-
 .testimonial__box {
-    /* gap 3rem */
+    display: grid;
+    gap: 3rem;
     padding: 3rem;
     background-color: var(--clr-neutral-white);
 }
@@ -335,14 +378,17 @@ header {
 ************************/
 
 .contact-us {
-    /* Center gap 1.5*/
+    display: grid;
+    gap: 1.5rem;
+    justify-items: center;
+    align-content: center;
     padding: 6.5rem 5rem;
     color: var(--clr-neutral-white);
     background-color: var(--clr-neutral-grey-900);
 }
 
 .contact-us__header {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', sans-serif;
     font-size: 4.5rem;
     font-weight: 400;
     text-transform: unset;
@@ -357,16 +403,20 @@ header {
     Footer Top
 ************************/
 .footer__top {
-    /* gap 3rem */
+    display: grid;
+    gap: 3rem;
     padding: 5rem;
 }
 
 .footer__top-content {
-    /* grid 40% 40% space-betwen */
+    display: grid;
+    grid-template-columns: 40% 50%;
+    justify-content: space-between;
 }
 
 .footer__top-text {
-    /* space-between */
+    display: grid;
+    align-content: space-between;
 }
 
 .footer__copyright {
@@ -377,8 +427,13 @@ header {
     text-decoration: underline;
 }
 
+.footer__top-links {
+    display: grid;
+    gap: 3rem;
+}
+
 .footer__link {
-    font-family: 'EB Garamond';
+    font-family: 'EB Garamond', sans-serif;
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 2.5rem;
@@ -405,7 +460,9 @@ header {
 ************************/
 
 .footer__bottom {
-    /* grid 3 col*/
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-between;
     padding: 5rem;
     color: var(--clr-neutral-white);
     background-color: var(--clr-neutral-grey-900);
@@ -415,17 +472,21 @@ header {
     color: var(--clr-error);
 }
 
-.footer__bottom-section {
-
+.footer__bottom-sections {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: 1fr 1fr;
 }
 
 .footer__bottom-section-header {
-    padding: 0.75rem 0rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 0;
     border-bottom: 2px solid var(--clr-neutral-white);
 }
 
 .footer__socials {
-    /* flex gap 0.5rem */
+    display: flex;
+    gap: 0.5rem;
 }
 
 .footer__socials img {
